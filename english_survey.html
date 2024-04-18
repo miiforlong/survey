@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .survey {
+            margin-bottom: 20px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultsBtn {
+            margin-top: 20px;
+        }
+        #surveyResults {
+            margin-top: 20px;
+        }
+        #surveyResponseText {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Survey</h1>
+    </header>
+
+    <div class="survey">
+        <form id="surveyForm">
+            <fieldset>
+                <legend>How much time do you spend on social media?</legend>
+                <label><input type="radio" name="timeSpent" value="0"> 0 hours</label>
+                <label><input type="radio" name="timeSpent" value="1"> Between 0 and 5 hours</label>
+                <label><input type="radio" name="timeSpent" value="2"> Between 5 and 10 hours</label>
+                <label><input type="radio" name="timeSpent" value="3"> Between 10 and 15 hours</label>
+                <label><input type="radio" name="timeSpent" value="4"> More than 15 hours</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>On which social media platform do you spend the most time?</legend>
+                <label><input type="radio" name="socialMedia" value="discord"> Discord</label>
+                <label><input type="radio" name="socialMedia" value="snapchat"> Snapchat</label>
+                <label><input type="radio" name="socialMedia" value="instagram"> Instagram</label>
+                <label><input type="radio" name="socialMedia" value="facebook"> Facebook</label>
+                <label><input type="radio" name="socialMedia" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Have you ever accepted a friend request from a stranger on social media?</legend>
+                <label><input type="radio" name="strangerFriend" value="yes"> Yes</label>
+                <label><input type="radio" name="strangerFriend" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Have you ever been hacked on a social media platform?</legend>
+                <label><input type="radio" name="hacked" value="yes"> Yes</label>
+                <label><input type="radio" name="hacked" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How many friends do you have on social media?</legend>
+                <label><input type="radio" name="friendsCount" value="5"> 5</label>
+                <label><input type="radio" name="friendsCount" value="10"> 10</label>
+                <label><input type="radio" name="friendsCount" value="50"> 50</label>
+                <label><input type="radio" name="friendsCount" value="100"> 100</label>
+                <label><input type="radio" name="friendsCount" value="more"> More than 100</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How long have you been on social media?</legend>
+                <label><input type="radio" name="timeOnSocialMedia" value="week"> A week</label>
+                <label><input type="radio" name="timeOnSocialMedia" value="month"> A month</label>
+                <label><input type="radio" name="timeOnSocialMedia" value="year"> A year</label>
+                <label><input type="radio" name="timeOnSocialMedia" value="moreYear"> More than a year</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>on what device do you go on social media?</legend>
+                <label><input type="radio" name="device" value="phone">phone</label>
+                <label><input type="radio" name="device" value="laptop">laptop</label>
+                <label><input type="radio" name="device" value="computer">computer</label>
+                <label><input type="radio" name="device" value="otherr">other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>at what hour are you the most on social media?</legend>
+                <label><input type="radio" name="hour" value="8h">8h</label>
+                <label><input type="radio" name="hour" value="10h">10h</label>
+                <label><input type="radio" name="hour" value="12h">12h</label>
+                <label><input type="radio" name="hour" value="14h">14h</label>
+                <label><input type="radio" name="hour" value="16h">16h</label>
+                <label><input type="radio" name="hour" value="18h">18h</label>
+                <label><input type="radio" name="hour" value="20h">20h</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>how many social media accounts have you?</legend>
+                <label><input type="radio" name="accounts" value="1">1</label>
+                <label><input type="radio" name="accounts" value="2">2</label>
+                <label><input type="radio" name="accounts" value="3">3</label>
+                <label><input type="radio" name="accounts" value="4">4</label>
+                <label><input type="radio" name="accounts" value="5">5</label>
+                <label><input type="radio" name="accounts" value="6">6</label>
+                <label><input type="radio" name="accounts" value="7">7</label>
+                <label><input type="radio" name="accounts" value="8">8</label>
+                <label><input type="radio" name="accounts" value="9">9</label>
+                <label><input type="radio" name="accounts" value="10">10</label>
+                <label><input type="radio" name="accounts" value="10+">more than 10</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>what informations do you share on social medias?</legend>
+                <label><input type="radio" name="accounts" value="1">mail</label>
+                <label><input type="radio" name="accounts" value="2">age</label>
+                <label><input type="radio" name="accounts" value="3">personal relations</label>
+                <label><input type="radio" name="accounts" value="4">work address</label>
+                <label><input type="radio" name="accounts" value="5">your address</label>
+                <label><input type="radio" name="accounts" value="6">personal pictures</label>
+                <label><input type="radio" name="accounts" value="7">phone number</label>
+                <label><input type="radio" name="accounts" value="8">sexual opinion</label>
+                <label><input type="radio" name="accounts" value="9">politic opinion</label>
+                <label><input type="radio" name="accounts" value="10">other</label>
+            </fieldset>
+
+            <button type="button" onclick="submitSurvey()">Submit</button>
+        </form>
+    </div>
+
+    <button id="resultsBtn" onclick="showResults()">Show Results</button>
+
+    <div id="surveyResults" style="display: none;">
+        <h2>Survey Results:</h2>
+        <p id="surveyResponseText"></p>
+    </div>
+
+    <script>
+        function submitSurvey() {
+            const form = document.getElementById('surveyForm');
+            const timeSpent = form.querySelector('input[name="timeSpent"]:checked');
+            const socialMedia = form.querySelector('input[name="socialMedia"]:checked');
+            const strangerFriend = form.querySelector('input[name="strangerFriend"]:checked');
+            const hacked = form.querySelector('input[name="hacked"]:checked');
+            const friendsCount = form.querySelector('input[name="friendsCount"]:checked');
+            const timeOnSocialMedia = form.querySelector('input[name="timeOnSocialMedia"]:checked');
+            
+            if (timeSpent && socialMedia && strangerFriend && hacked && friendsCount && timeOnSocialMedia) {
+                const surveyResponse = {
+                    timeSpent: timeSpent.value,
+                    socialMedia: socialMedia.value,
+                    strangerFriend: strangerFriend.value,
+                    hacked: hacked.value,
+                    friendsCount: friendsCount.value,
+                    timeOnSocialMedia: timeOnSocialMedia.value
+                };
+
+                localStorage.setItem('surveyResponse', JSON.stringify(surveyResponse));
+                alert("Thank you for voting!");
+                form.reset();
+            } else {
+                alert("Please answer all questions before submitting.");
+            }
+        }
+
+        function showResults() {
+            const surveyResultsDiv = document.getElementById('surveyResults');
+            const surveyResponseText = document.getElementById('surveyResponseText');
+            const storedResponse = localStorage.getItem('surveyResponse');
+
+            if (storedResponse) {
+                const surveyResponse = JSON.parse(storedResponse);
+                surveyResponseText.innerHTML = `
+                    <strong>Time Spent on Social Media:</strong> ${surveyResponse.timeSpent}<br>
+                    <strong>Favorite Social Media Platform:</strong> ${surveyResponse.socialMedia}<br>
+                    <strong>Accepted Friend Request from Stranger:</strong> ${surveyResponse.strangerFriend}<br>
+                    <strong>Been Hacked on Social Media:</strong> ${surveyResponse.hacked}<br>
+                    <strong>Number of Friends on Social Media:</strong> ${surveyResponse.friendsCount}<br>
+                    <strong>Time on Social Media:</strong> ${surveyResponse.timeOnSocialMedia}<br>
+                `;
+                surveyResultsDiv.style.display = 'block';
+            } else {
+                alert("No results found. Please vote first.");
+            }
+        }
+    </script>
+</body>
+</html>
